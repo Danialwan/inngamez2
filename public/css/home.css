@@ -1,0 +1,405 @@
+header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+}
+
+header video {
+    height: 100vh;
+}
+
+.headerVidio {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content {
+    margin-top: 28vh;
+    margin-left: 15vw;
+    color: #ffffff;
+    /* width: 100%; */
+}
+
+.content h1 {
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: -20px;
+    padding: 0;
+    letter-spacing: 3px;
+}
+
+.homeDescription {
+    background-color: rgb(0, 0, 0);
+    /* border: 2px solid black; */
+    /* height: 100vh; */
+    padding: 2vw;
+    width: 100%;
+}
+
+.homeDescription p {
+    font-size: 1.2em;
+    width: 36vw;
+    /* background-color: blue; */
+    color: #ffffff;
+}
+
+.ourGame {
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    background-color: black;
+    padding: 2vw;
+}
+
+.ourGame .title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+/* .wrapper,.card{
+margin: auto;
+position: relative;
+} */
+.gameCard{
+padding: 2vw 10vw;
+}
+.ourGame .gameCard .wrapper{
+    perspective: 900px;
+    background-color: none;
+}
+.ourGame .gameCard .card {
+    background-color: none;
+    border: 0px;
+    text-align: center;
+    transition: all 1s cubic-bezier(0.7, -.5, 0.3, 1.8);
+    transform-style: preserve-3d;
+}
+
+.wrapper:hover .card{
+    transform: rotateY(180deg);
+    background-color: none;
+}
+.cardFront,.cardBack{
+    position: relative;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+.ourGame .gameCard .cardFront {
+    cursor: pointer;
+    background-color: none;
+    justify-self: center;
+    width: 100%;
+    height: 20vw;
+    padding: 1rem;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    backface-visibility: hidden;
+    /* border-radius: 10px; */
+}
+
+.ourGame .gameCard .cardBack {
+    position: absolute;
+    transform: rotateY(180deg);
+    background-color: black;
+    border: 2px solid white;
+    color: #ffffff;
+    justify-self: center;
+    width: 100%;
+    height: 20vw;
+    padding: 1.2rem;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    /* border-radius: 10px; */
+}
+.ourGame .gameCard .cardBack::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Warna hitam dengan transparansi 50% */
+    pointer-events: none; /* Memastikan overlay tidak menghalangi interaksi dengan konten di bawahnya */
+}
+.cardBack .card-1 {
+    position: relative;
+    z-index: 2; /* Memastikan konten berada di atas overlay */
+}
+.ourGame .gameCard .cardBack b {
+    font-size: 1.5rem;
+}
+.ourGame .gameCard .cardBack p {
+    font-size: 1rem;
+}
+.ourGame .gameCard .cardBack .cardBtn {
+    background-color: white;
+    /* border: 1px solid black; */
+    color: black;
+    padding: 1vh 6vh;
+    /* border-radius: 10px; */
+}
+
+.ourGame .gameCard .cardBack .cardBtn:hover {
+    background-color: black;
+    /* border: 1px solid white; */
+    color: white;
+    padding: 1vh 6vh;
+    /* border-radius: 10px; */
+}
+
+.ourGame .gameCard div div {
+    background-color: rgb(81, 81, 81);
+}
+
+.recentWorks {
+    width: 100%;
+    background-color: black;
+}
+
+.recentWorks .title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.card-1{
+    background-image: none;
+}
+
+.card-2{
+    background-image: none;
+}
+
+.card-3{
+    background-image: none;
+}
+
+.card-4{
+    background-image: none;
+}
+.edit {
+    position: absolute;
+    display: block;
+    border-radius: 0px 5px 0px 10px;
+    padding: 1.2rem;
+    right: 0;
+    top: 0;
+    background-image: url('../images/icon/edit_white.svg');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.edit:hover {
+    background-color: rgb(255, 255, 255);
+    background-image: url('../images/icon/edit_black.svg');
+}
+.adminEdit{
+    padding: 5vh;
+    border: 1px solid white;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 100;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.ModalBtn{
+    padding: 0.5vh 4vh;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+.ModalBtn:hover{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 60vh;
+    }
+
+    .content {
+        margin-top: 20vh;
+        margin-left: 15vw;
+        color: #ffffff;
+        /* width: 100%; */
+    }
+
+    .content h1 {
+        font-size: 3em;
+        font-weight: 700;
+        margin: -20px;
+        padding: 0;
+        letter-spacing: 3px;
+    }
+
+    .homeDescription {
+        background-color: rgb(0, 0, 0);
+        /* height: 100vh; */
+        padding: 2vw;
+        width: 100%;
+    }
+
+    .homeDescription p {
+        font-size: 1em;
+        width: 60vw;
+        /* background-color: blue; */
+        color: #ffffff;
+    }
+
+    .ourGame .gameCard .cardFront {
+        display: none;
+            /* border-radius: 10px; */
+    }
+    .wrapper:hover .card{
+        transform: none;
+        background-color: none;
+    }
+    .ourGame .gameCard .cardBack {
+        position: relative;
+        transform: rotateY(0deg);
+        background-color: black;
+        border: 2px solid white;
+        color: #ffffff;
+        justify-self: center;
+        width: 100%;
+        height: 40vh;
+        padding: 1.2rem;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+        /* border-radius: 10px; */
+    }
+/*
+    .card-1{
+        background-image: url('../images/home/GameIcon_01_black.png');
+    }
+
+    .card-2{
+        background-image: url('../images/home/GameIcon_02_black.png');
+    }
+
+    .card-3{
+        background-image: url('../images/home/GameIcon_04_black.png');
+    }
+
+    .card-4{
+        background-image: url('../images/home/GameIcon_03_black.png');
+    } */
+}
+
+@media screen and (max-width: 768px) {
+    .gameCard{
+        padding: 2vw 10vw;
+        }
+    .ourGame .gameCard .cardFront {
+        display: none;
+            /* border-radius: 10px; */
+    }
+    .wrapper:hover .card{
+        transform: none;
+        background-color: none;
+    }
+    .ourGame .gameCard .cardBack {
+        position: relative;
+        transform: rotateY(0deg);
+        background-color: #000000;
+        border: 2px solid rgb(255, 255, 255);
+        color: #ffffff;
+        justify-self: center;
+        width: 100%;
+        height: 60vh;
+        padding: 1.2rem;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+        /* border-radius: 10px; */
+    }
+    .ourGame .gameCard .cardBack b {
+        font-size: 1.5rem;
+    }
+    .ourGame .gameCard .cardBack p {
+        font-size: 1rem;
+    }
+    .content {
+        margin-top: 20vh;
+        margin-left: 10vw;
+        color: #ffffff;
+        /* width: 100%; */
+    }
+
+    .content h1 {
+        font-size: 1.8em;
+        font-weight: 700;
+        margin: -10px;
+        padding: 0;
+        letter-spacing: 3px;
+    }
+
+    .homeDescription {
+        background-color: rgb(0, 0, 0);
+        /* height: 100vh; */
+        padding: 5vw;
+        width: 100%;
+    }
+
+    .homeDescription p {
+        font-size: 0.9em;
+        width: 80vw;
+        /* background-color: blue; */
+        color: #ffffff;
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888888;
+        width: 80%;
+    }
+}

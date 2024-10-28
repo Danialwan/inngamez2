@@ -1,0 +1,521 @@
+header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-position: center;
+}
+
+.containerCreateNews {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    /* height: 100vh; */
+    color: white;
+}
+
+.containerDetailNews {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    color: white;
+}
+
+.content {
+    margin-top: 28vh;
+    margin-left: 15vw;
+    color: #ffffff;
+    /* width: 100%; */
+}
+
+.content h1 {
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: -20px;
+    padding: 0;
+    letter-spacing: 3px;
+}
+
+.UpdateFromUs {
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    background-color: black;
+    padding: 2vw;
+}
+
+.UpdateFromUs .title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.UpdateFromUs .newsContainer {
+    /* width: 80%; */
+}
+
+.UpdateFromUs .newsContainer .card {
+    background-color: #ffffff;
+    /* filter: grayscale(100); */
+    width: 100%;
+    height: 25vw;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    /* border-radius: 10px; */
+}
+
+.news {
+    filter: grayscale(100);
+    transition: all 0.5s ease-out;
+    /* animation: 0.5s ease-in all; */
+}
+
+.news:hover {
+    filter: grayscale(0);
+}
+
+.UpdateFromUs .newsContainer .newsText {
+    color: #ffffff;
+    float: left;
+    text-align: start;
+    /* background-color: antiquewhite; */
+    width: 100%;
+    height: auto;
+}
+
+.UpdateFromUs .newsContainer .news .newsTitle {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.UpdateFromUs .newsContainer .news .newsDate {
+    font-size: 0.8rem
+}
+
+.UpdateFromUs .newsContainer .news .newsBody {
+    font-size: 1rem
+}
+
+.addNews {
+    border: 4px dashed white;
+    width: 100%;
+    height: 25vw;
+    padding: 4rem;
+}
+
+.addNews:hover {
+    transform: scale(0.98);
+    transition: all 0.5s ease;
+    padding: 4rem;
+}
+
+.edit {
+    /* position: absolute; */
+    border-radius: 0px 5px 0px 40px;
+    padding: 1.5rem;
+    background-color: transparent;
+    background-image: url('../images/icon/edit_white.svg');
+    background-position: 15px 7px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.edit:hover {
+    background-color: rgb(255, 255, 255);
+    background-image: url('../images/icon/edit_black.svg');
+}
+
+.delete {
+    border-radius: 40px 0px 5px 0px ;
+    padding: 1.5rem;
+    background-color: transparent;
+    background-image: url('../images/icon/delete_white.svg');
+    background-position: 15px 12px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.delete:hover {
+    background-color: rgb(255, 94, 94);
+    background-image: url('../images/icon/delete_black.svg');
+}
+
+.formCreate {
+    width: 30vw;
+}
+
+.RightContainerCreateNews {
+    border-left: 1px solid white;
+}
+
+.ContainerForm {
+    width: 100%;
+}
+
+.BackButton {
+    width: 100%;
+}
+
+.back {
+    width: 6vh;
+    height: 6vh;
+    /* background-color: #ffffff; */
+    background-image: url('../images/icon/back_white.svg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.submit {
+    color: black;
+    padding: 0.5vh 6vh;
+    background-color: white;
+    font-weight: bold;
+    float: right;
+}
+
+.submit:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+form .title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.RightContainerCreateNews .title {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.DetailNewsImage {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.containerDetailNews .title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.DetailNewsImage img {
+    border: 1px solid white;
+}
+
+.ContainerRight {
+    border-left: 1px solid white;
+}
+
+.ContainerRight .Rekomendasi {
+    /* height: 20vh; */
+}
+
+.ContainerRight .Rekomendasi .image {
+    width: auto;
+    height: 15vh;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+}
+
+button.editNews {
+    display: block !important;
+    align-self: flex-start;
+    padding: 1rem;
+    border: 1px solid white;
+    background-image: url('../images/icon/edit_white.svg');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+button.editNews:hover {
+    background-image: url('../images/icon/edit_black.svg');
+    align-self: flex-start;
+    background-color: white;
+    color: black;
+}
+
+.boxEditNews {
+    border: 1px solid white;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 100;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ModalBtn {
+    padding: 0.5vh 4vh;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+.ModalBtn:hover {
+    background-color: black;
+    color: white;
+}
+
+.modal .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.oldImage {
+    background-color: black;
+    width: 30vh;
+    height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dropzone {
+    background: #e3e6ff;
+    border-radius: 13px;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px dotted #1833FF;
+    margin-top: 50px;
+}
+
+.dropArea {
+    width: 50%;
+    height: 25vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dropAreaEdit {
+    width: 30vh;
+    height: 20vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+}
+
+/* .delete{
+    border-radius: 0px 5px 40px 0px ;
+    padding: 1.5rem;
+    background-color: transparent;
+    background-image: url('../images/icon/delete_white.svg');
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+.delete:hover{
+    background-color: rgb(255, 255, 255);
+    background-image: url('../images/icon/delete_black.svg');
+} */
+#textLabel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+    .edit {
+        /* position: absolute; */
+        border-radius: 0px 5px 0px 40px;
+        padding: 1.5rem;
+        background-color: transparent;
+        background-color: rgb(255, 255, 255);
+        background-image: url('../images/icon/edit_black.svg');
+        background-position: 15px 7px;
+        background-repeat: no-repeat;
+        background-size: 50%;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 60vh;
+    }
+
+    .content {
+        margin-top: 20vh;
+        margin-left: 15vw;
+        color: #ffffff;
+        /* width: 100%; */
+    }
+
+    .content h1 {
+        font-size: 3em;
+        font-weight: 700;
+        margin: -20px;
+        padding: 0;
+        letter-spacing: 3px;
+    }
+
+    .UpdateFromUs .newsContainer .card {
+        background-color: #ffffff;
+        justify-self: center;
+        width: 100%;
+        height: 55vw;
+        /* border-radius: 10px; */
+    }
+
+    .addNews {
+        border: 4px dashed white;
+        width: 100%;
+        height: 40vh;
+        padding: 4rem;
+    }
+
+    .RightContainerCreateNews {
+        border-left: none;
+        border-top: 1px solid white;
+        margin-top: 5vh;
+        padding-top: 3vh;
+    }
+
+    .BackButton,
+    .BackButton .back {
+        display: none;
+    }
+
+    .ContainerRight {
+        border-left: none;
+        border-top: 1px solid white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .edit {
+        /* position: absolute; */
+        border-radius: 0px 5px 0px 40px;
+        padding: 1.5rem;
+        background-color: transparent;
+        background-color: rgb(255, 255, 255);
+        background-image: url('../images/icon/edit_black.svg');
+        background-position: 15px 7px;
+        background-repeat: no-repeat;
+        background-size: 50%;
+    }
+
+    .content {
+        margin-top: 20vh;
+        margin-left: 10vw;
+        color: #ffffff;
+        /* width: 100%; */
+    }
+
+    .content h1 {
+        font-size: 1.8em;
+        font-weight: 700;
+        margin: -10px;
+        padding: 0;
+        letter-spacing: 3px;
+    }
+
+    .UpdateFromUs .title {
+        color: white;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 10vh;
+    }
+
+    .UpdateFromUs .newsContainer .card {
+        background-color: #ffffff;
+        justify-self: center;
+        width: 100%;
+        height: 55vh;
+        /* padding: 1rem */
+        /* border-radius: 10px; */
+    }
+
+    .addNews {
+        border: 4px dashed white;
+        width: 100%;
+        height: 70vw;
+        padding: 4rem;
+    }
+
+    .ContainerRight .Rekomendasi .image {
+        height: 12vh;
+    }
+
+    .dropArea {
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    .ModalBtn {
+        margin-top: 1vh;
+        padding: 1vh;
+        border: 1px solid black;
+        font-size: 1rem;
+    }
+
+    .ModalBtn:hover {
+        background-color: black;
+        color: white;
+    }
+    .boxEditNews {
+        border: 1px solid white;
+        max-width: 90vw;
+    }
+
+}

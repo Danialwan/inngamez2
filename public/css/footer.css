@@ -1,0 +1,29 @@
+footer{
+    background-color: #585858;
+    color: white;
+}
+footer .footerText{
+    border-right: 2px solid rgb(255, 255, 255);
+}
+footer .footerText b{
+    font-size: 2rem;
+
+}
+.copyright{
+    background-color: black;
+    color: rgb(185, 185, 185);
+    font-weight: 300;
+}
+.gameCard .card{
+background-repeat: no-repeat;
+background-size: 100%;
+border: 1px solid white;
+}
+.loginBtn{
+    cursor: default
+}
+@media screen and (max-width: 768px) {
+    footer .footerText{
+        border-right: 0px solid rgb(255, 255, 255);
+    }
+}

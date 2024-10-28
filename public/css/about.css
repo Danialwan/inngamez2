@@ -1,0 +1,240 @@
+header{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-position: center;
+}
+.content {
+    margin-top: 28vh;
+    margin-left: 15vw;
+    color: #ffffff;
+    /* width: 100%; */
+  }
+  .content h1{
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: -20px;
+    padding: 0;
+    letter-spacing: 3px;
+  }
+.aboutDescription{
+    background-color: rgb(0, 0, 0);
+    padding: 2vw;
+    width: 100%;
+}
+.aboutDescription b{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.aboutDescription p{
+    font-size: 1.2em;
+    width: 50vw;
+    /* background-color: blue; */
+    color: #ffffff;
+}
+.ourTeam{
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    background-color: black;
+    padding: 2vw;
+}
+.ourTeam .title{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.ourTeam .gameCard{
+    /* width: 80%; */
+}
+.ourTeam .gameCard .card{
+    background-color: #ffffff;
+    justify-self: center;
+    width: 100%;
+    height: 25vw;
+    padding: 1rem;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    /* border-radius: 10px; */
+    border: none;
+}
+.ourTeam .gameCard div div{
+    background-color: rgb(81, 81, 81);
+}
+.recentWorks{
+    width: 100%;
+    background-color: black;
+}
+.recentWorks .title{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.adminEdit{
+    padding: 5vh;
+    border: 1px solid white;
+}
+.edit {
+    position: absolute;
+    display: block;
+    border-radius: 0px 5px 0px 10px;
+    padding: 1.2rem;
+    right: 0;
+    top: 0;
+    background-image: url('../images/icon/edit_white.svg');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.edit:hover {
+    background-color: rgb(255, 255, 255);
+    background-image: url('../images/icon/edit_black.svg');
+}
+
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 100;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.ModalBtn{
+    padding: 0.5vh 4vh;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+.ModalBtn:hover{
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width: 992px) {
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 60vh;
+    }
+    .content {
+        margin-top: 20vh;
+        margin-left: 15vw;
+        color: #ffffff;
+        /* width: 100%; */
+      }
+    .content h1{
+        font-size: 3em;
+        font-weight: 700;
+        margin: -20px;
+        padding: 0;
+        letter-spacing: 3px;
+      }
+    .aboutDescription{
+        background-color: rgb(0, 0, 0);
+        padding: 2vw;
+        width: 100%;
+    }
+    .aboutDescription p{
+        font-size: 1em;
+        width: 60vw;
+        color: #ffffff;
+    }
+    .ourTeam .gameCard .card{
+        background-color: #ffffff;
+        justify-self: center;
+        width: 100%;
+        height: 55vw;
+        padding: 1rem
+        /* border-radius: 10px; */
+    }
+}
+@media screen and (max-width: 768px) {
+    .content {
+        margin-top: 20vh;
+        margin-left: 10vw;
+        color: #ffffff;
+        /* width: 100%; */
+      }
+    .content h1{
+        font-size: 1.8em;
+        font-weight: 700;
+        margin: -10px;
+        padding: 0;
+        letter-spacing: 3px;
+      }
+      .ourTeam .gameCard{
+        padding: 5vh 5vh;
+      }
+    .ourTeam .gameCard .card{
+        background-color: #ffffff;
+        justify-self: center;
+        width: 100%;
+        height: 55vh;
+        /* padding: 1rem */
+        /* border-radius: 10px; */
+    }
+    .aboutDescription{
+        background-color: rgb(0, 0, 0);
+        /* height: 100vh; */
+        padding: 5vw;
+        width: 100%;
+    }
+    .aboutDescription p{
+        font-size: 0.9em;
+        width: 80vw;
+        /* background-color: blue; */
+        color: #ffffff;
+    }
+    .recentWorks .title{
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+}

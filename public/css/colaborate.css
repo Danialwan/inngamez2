@@ -1,0 +1,81 @@
+.colaborate .text{
+    /* background-color: aquamarine; */
+    border-right: 2px solid black;
+}
+
+.colaborate .text p{
+    font-size: 2rem;
+    margin-bottom: -1vw;
+}
+
+.colaborate .text h1{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: -1.5vw;
+}
+
+.btn-colaborate{
+    border: 1px black solid;
+    padding: 0.5vw 2vw;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.btn-colaborate:hover{
+    color: white;
+    font-weight: 500;
+    background-color: black;
+    border: 1px black solid;
+    padding: 0.5vw 2vw;
+}
+@media screen and (max-width: 850px) {
+    .colaborate .text{
+        /* background-color: aquamarine; */
+        padding: 2vw;
+        border-right: 0px solid black;
+        border-bottom: 2px solid black;
+    }
+    .btn-colaborate{
+        border: 1px black solid;
+        padding: 1vw 10vw;
+        border-radius: 5px;
+        font-weight: 500;
+    }
+    .btn-colaborate:hover{
+        color: white;
+        font-weight: 500;
+        padding: 1vw 10vw;
+        border-radius: 5px;
+        font-weight: 500;
+    }
+}
+@media screen and (max-width: 768px) {
+    .colaborate .text{
+        /* background-color: aquamarine; */
+        padding: 2vw;
+        border-right: 0px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    .colaborate .text p{
+        font-size: 1rem;
+        margin-bottom: -1vw;
+    }
+
+    .colaborate .text h1{
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: -1.5vw;
+    }
+    .btn-colaborate{
+        border: 1px black solid;
+        padding: 0.5vw 10vw;
+        border-radius: 5px;
+        font-weight: 500;
+    }
+    .btn-colaborate:hover{
+        color: white;
+        padding: 0.5vw 10vw;
+        border-radius: 5px;
+        font-weight: 500;
+    }
+}
